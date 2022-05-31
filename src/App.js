@@ -1,12 +1,12 @@
-
-
+import Router from "./router/Routes"
+import {BrowserRouter} from "react-router-dom"
 function App() {
   return (
+    <BrowserRouter>
     <div className="App">
-      <header className="text-4xl">
-        Project setup init
-      </header>
+      <Router />
     </div>
+    </BrowserRouter>
   );
 }
 
