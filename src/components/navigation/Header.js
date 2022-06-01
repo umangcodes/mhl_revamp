@@ -2,7 +2,14 @@ import React from 'react'
 
 function Header() {
   return (
-    <div>Header</div>
+    <div className='sticky flex justify-around align-baseline py-5'>
+      <div className='text-2xl'>MHL</div>
+      <div className="flex w-48 justify-around">
+        <div>Home</div>
+        <div>About</div>
+      </div>
+
+    </div>
   )
 }
 
