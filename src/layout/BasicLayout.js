@@ -6,11 +6,13 @@ import Footer from "../components/navigation/Footer"
 
 function BasicLayout() {
   return (
-    <div className="mx-5">
+  <>
     <Header />
+    <div className="mx-5">
     <Outlet />
-    <Footer />
     </div>
+    <Footer />
+    </>
   )
 }
 
