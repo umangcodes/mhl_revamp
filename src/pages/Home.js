@@ -7,7 +7,7 @@ function Home() {
     <div className='min-h-screen'>
       <Welcome />
       <img className="my-5" src={certificate}/>
-
+      
     </div>
   )
 }
