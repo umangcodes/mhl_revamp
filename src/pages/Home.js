@@ -6,8 +6,9 @@ function Home() {
   return (
     <div className='min-h-screen'>
       <Welcome />
-      <img className="my-5" src={certificate}/>
-      
+      <div className='my-5  flex justify-center align-center'>
+        <img className="object-cover lg:h-3/5 lg:w-4/5" src={certificate}/>
+      </div>      
     </div>
   )
 }
