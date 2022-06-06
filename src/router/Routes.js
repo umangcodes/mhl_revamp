@@ -4,6 +4,7 @@ import Home from "../pages/Home"
 import About from "../pages/About"
 import Error404 from "../pages/Error404"
 import BasicLayout from "../layout/BasicLayout";
+import ContactUs from "../pages/ContactUs";
 export default function Router(){
 
     let element = useRoutes([
@@ -18,6 +19,10 @@ export default function Router(){
         {
             path:"/about",
             element: <About />
+        },
+        {
+            path:"/contact-us",
+            element: <ContactUs />
         },
         {
             path:"*",
