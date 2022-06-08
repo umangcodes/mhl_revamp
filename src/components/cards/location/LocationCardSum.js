@@ -1,5 +1,5 @@
 import React from 'react'
-
+import {convertTime} from "../../../functions"
 function LocationCardSum(props) {
     let lab = props.data
   return (
@@ -18,13 +18,13 @@ function LocationCardSum(props) {
         {/* lab operation hours */}
         <div className='flex flex-col px-5'>
             {/* create a function to convert time from 24 to 12 */}
-            <span>Mon: {lab.operationHours.mon.start} till {lab.operationHours.mon.end}</span>
-            <span>Tue: {lab.operationHours.tue.start} till {lab.operationHours.tue.end}</span>
-            <span>wed: {lab.operationHours.wed.start} till {lab.operationHours.wed.end}</span>
-            <span>Thu: {lab.operationHours.thu.start} till {lab.operationHours.thu.end}</span>
-            <span>Fri: {lab.operationHours.fri.start} till {lab.operationHours.fri.end}</span>
-            <span>Sat: {lab.operationHours.sat.start} till {lab.operationHours.sat.end}</span>
-            {lab.operationHours.sun.start ? <span>Sun: {lab.operationHours.sun.start} till {lab.operationHours.sun.end}</span> : <span>Sun : closed</span> }
+            <span>Mon: {convertTime(lab.operationHours.mon.start)} - {convertTime(lab.operationHours.mon.end)}</span>
+            <span>Tue: {convertTime(lab.operationHours.tue.start)} - {convertTime(lab.operationHours.tue.end)}</span>
+            <span>wed: {convertTime(lab.operationHours.wed.start)} - {convertTime(lab.operationHours.wed.end)}</span>
+            <span>Thu: {convertTime(lab.operationHours.thu.start)} - {convertTime(lab.operationHours.thu.end)}</span>
+            <span>Fri: {convertTime(lab.operationHours.fri.start)} - {convertTime(lab.operationHours.fri.end)}</span>
+            <span>Sat: {convertTime(lab.operationHours.sat.start)} - {convertTime(lab.operationHours.sat.end)}</span>
+            {lab.operationHours.sun.start ? <span>Sun: {convertTime(lab.operationHours.sun.start)} - {convertTime(lab.operationHours.sun.end)}</span> : <span>Sun : closed</span> }
             
         </div>
 
