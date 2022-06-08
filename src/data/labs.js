@@ -81,6 +81,49 @@ const labs = [{
             end: 0
         }
     }
-}]
+},
+{
+    area:'North York',
+    labId: 101,
+    address1: "212 - 2100 Finch Ave W ",
+    city: "North York",
+    province: "ON",
+    postalCode: "M3N 2Z9",
+    contact: {
+        phone: 4166656142,
+        fax: 4166652131
+    },
+    operationHours:{
+        mon:{
+            start: "0800",
+            end: "1700"
+        },
+        tue:{
+            start: "0800",
+            end: "1700"
+        },
+        wed:{
+            start: "0800",
+            end: "1630"
+        },
+        thu:{
+            start: "0800",
+            end: "1630"
+        },
+        fri:{
+            start: "0800",
+            end: "1700"
+        },
+        sat:{
+            start: "0800",
+            end: "1600"
+        },
+        sun:{
+            start: 0,
+            end: 0
+        }
+    }
+}
+]
 
 export default labs
