@@ -5,6 +5,9 @@ import About from "../pages/About"
 import Error404 from "../pages/Error404"
 import BasicLayout from "../layout/BasicLayout";
 import ContactUs from "../pages/ContactUs";
+import Locations from "../pages/Locations"
+import LocationDetails from "../pages/LocationDetails"
+
 export default function Router(){
 
     let element = useRoutes([
@@ -27,6 +30,14 @@ export default function Router(){
         {
             path:"*",
             element: <Error404 />
+        },
+        {
+            path:"/location",
+            element: <Locations />
+        },
+        {
+            path:"/location/:locationId",
+            element: <LocationDetails />
         },
             ]
         
