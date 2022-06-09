@@ -125,5 +125,13 @@ const labs = [{
     }
 }
 ]
+function sccLocations(){
+    let areas = []
+    labs.map((lab) => areas.push(lab.area))
+    areas = [...new Set(areas)]
+    return areas
+
+}
 
 export default labs
+export {sccLocations}
