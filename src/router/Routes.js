@@ -7,7 +7,7 @@ import BasicLayout from "../layout/BasicLayout";
 import ContactUs from "../pages/ContactUs";
 import Locations from "../pages/Locations"
 import LocationDetails from "../pages/LocationDetails"
-
+import AddLocations from "../pages/AddLocations";
 export default function Router(){
 
     let element = useRoutes([
@@ -38,6 +38,10 @@ export default function Router(){
         {
             path:"/location/:locationId",
             element: <LocationDetails />
+        },
+        {
+            path:`${process.env.REACT_APP_ADD_LOCATION}`,
+            element: <AddLocations />
         },
             ]
         
