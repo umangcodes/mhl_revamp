@@ -7,7 +7,7 @@ function Header() {
     <div className='sticky top-0 flex justify-around  py-5 bg-primaryDark'>
       <div className='text-2xl align-center'>
         <Link to="/">
-          <img className="obejct-scale-down w-36 lg:w-48" src={logo}/>
+          <img className="object-scale-down w-36 lg:w-48" src={logo} alt="IQMH Certificate"/>
         </Link>
       </div>
       <div className="flex w-96 justify-around ">
