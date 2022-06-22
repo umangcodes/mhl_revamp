@@ -124,6 +124,10 @@ function AddLocations() {
                         dropdown 2
                     </div>
                 </div>
+                <span>Select time slot for appointments: </span>
+                <div className='mx-4'>
+                    dropdown menu
+                </div>
             </div>
 
             <button className="px-2 border rounded-full my-5 mt-5 h-8 w-24 hover:shadow-xl" onClick={handleSubmit}>Submit</button>
