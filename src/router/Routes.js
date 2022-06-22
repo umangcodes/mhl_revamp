@@ -8,6 +8,7 @@ import ContactUs from "../pages/ContactUs";
 import Locations from "../pages/Locations"
 import LocationDetails from "../pages/LocationDetails"
 import AddLocations from "../pages/AddLocations";
+import ComponentCreator from "../pages/ComponentCreator"
 export default function Router(){
 
     let element = useRoutes([
@@ -42,6 +43,10 @@ export default function Router(){
         {
             path:`${process.env.REACT_APP_ADD_LOCATION}`,
             element: <AddLocations />
+        },
+        {
+            path:"/playground",
+            element: <ComponentCreator />
         },
             ]
         
