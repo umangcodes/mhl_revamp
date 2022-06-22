@@ -20,7 +20,7 @@ function ContactUs() {
     const sendEmail = async() =>{
       setSending(true)
       const resp = await emailjs.send(process.env.REACT_APP_emailJs_serviceID, process.env.REACT_APP_emailJs_template, emailObject, process.env.REACT_APP_emailjs_publicKey)
-      resp.then((v) => {console.log(v); setSending(false)}).catch((e)=>{console.log(e)})
+      setSending(false)
     } 
     const emailObject = {
       firstName: firstName,
@@ -50,7 +50,9 @@ function ContactUs() {
   return (
 
     <div className="h-screen">
-        <div className="hidden sm:block" aria-hidden="true">
+      <div className={sending ? "visible" : "invisible"}>Sending your data please wait...</div>
+      <div className={sending ? "invisible" : "visible"}>
+      <div className="hidden sm:block" aria-hidden="true">
         <div className="py-5 my-5">
           <div className="text-center font-bold text-3xl" >Contact Us</div>
         </div>
@@ -146,6 +148,7 @@ function ContactUs() {
         <div>
           Send us an email at info@mhlab.ca
           or call us at 416
+        </div>
         </div>
     </div>
   )
